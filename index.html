@@ -16,6 +16,19 @@
 
   gtag('config', 'UA-172820632-1');
 </script>
+  <script>
+      var sites = [
+        'http://www.google.com',
+        'http://www.stackoverflow.com',
+        'http://www.example.com',
+        'http://www.youtube.com'
+    ];
+
+    function randomSite() {
+        var i = parseInt(Math.random() * sites.length);
+        location.href = sites[i];
+    }
+    <\script>
   <title>Home</title>
   <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@700&display=swap" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,5 +38,6 @@
 <h1 style="text-align:center;font-family: 'Yanone Kaffeesatz', sans-serif;font-size: 10vw; padding-bottom: -100px;">BetterOddsThanTheLottery</h1>
 <p style="text-align:center">"So you're telling me there's a chance..."</p>
 <hr class="rounded">
+  <a href="#" onclick="randomSite();">Random</a>
 </body>
 </html>
