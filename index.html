@@ -1,43 +1,90 @@
 <!DOCTYPE html>
+
 <html>
 <head>
   <style>
-    hr.rounded {
-  border-top: 8px solid #bbb;
-  border-radius: 5px;
+      hr.rounded {
+                  border-top: 3px solid #bbb;
+                  border-radius: 5px;
+                  }
+      h1 {
+          text-align: center;
+          font-family: 'Yanone Kaffeesatz', sans-serif;
+          font-size: 4vw;
+          color: white;
+          line-height: 0px;
+          }
+      h2 {
+         text-align: center;
+         font-family: 'Yanone Kaffeesatz', sans-serif;
+         font-size: 2vw;
+         color: white;
+         margin-bottom: 0px;
+         }
+      header {
+              background-color: limegreen;
+                position: fixed;
+  left: 0;
+  top: 0;
+    width: 100%;
+              padding: 15px;
+              text-align: center;
+              }
+      p {font-family: 'Yanone Kaffeesatz', sans-serif;
+      font-size: 1.5vw;
+                text-align: center;}
+      .footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: limegreen;
+  color: white;
+  text-align: center;
 }
   </style>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-172820632-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-172820632-1');
-</script>
-<script>
-    var sites = [
-        'http://www.google.com',
-        'http://www.stackoverflow.com',
-        'http://www.example.com',
-        'http://www.youtube.com'
-    ];
-
-    function randomSite() {
-        var i = parseInt(Math.random() * sites.length);
-        location.href = sites[i];
-    }
-<\script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172820632-1">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-172820632-1');
+      <!--JavaScript for getting random webpage-->
+      var sites = [
+                   'http://www.google.com',
+                   'http://www.stackoverflow.com',
+                   'http://www.example.com',
+                   'http://www.youtube.com'
+                   ];
+      function randomSite() {
+                             var i = parseInt(Math.random() * sites.length);
+                             location.href = sites[i];
+                             }
+  </script>
+  <!--  Title of homepage  -->
   <title>Home</title>
   <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@700&display=swap" rel="stylesheet">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
-<body style="background-color:skyblue;">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
-<h1 style="text-align:center;font-family: 'Yanone Kaffeesatz', sans-serif;font-size: 10vw; padding-bottom: -100px;">BetterOddsThanTheLottery</h1>
-<p style="text-align:center">"So you're telling me there's a chance..."</p>
+<header>
+    <h1>BetterOddsThanTheLottery.com</h1>
+    <h2>"So you're telling me there's a chance..."</h2>
+</header>
+
+
+<body style="background-color:white;">
+
+
+
 <hr class="rounded">
   <a href="#" onclick="randomSite();">Random</a>
 </body>
+
+<footer class="footer">
+    <p>
+        &#169; 2020 BetterOddsThanTheLottery.com
+    </p>
+</footer>
+
 </html>
