@@ -1,76 +1,78 @@
+
 * {
 box-sizing: border-box;
-font-family: 'Yanone Kaffeesatz', sans-serif;
-}
-
-html, body {
 margin: 0;
-height:100%;
-}
-
-.header {
-padding: 1px;
-background: limegreen;
-border-bottom-style: solid;
-border-width: 0px;
-height:15%;
-}
-
-.middle_row {
-display: flex;
-flex-wrap: wrap;
-font-size: 90px;
-align-items: stretch;
-height:75%;
-}
-
-.left_side {
-flex: 15%;
-background-color: forestgreen;
-padding: 20px;
-}
-/* Main column */
-.middle {
-display: flex;
-justify-content: center;
-align-items: center;
-flex: 70%;
-background-color: palegreen;
-padding: 20px;
-}
-
-.right_side {
-flex: 15%;
-background-color: forestgreen;
-padding: 20px;
-}
-.footer {
-font-family: 'Yanone Kaffeesatz', sans-serif;
-padding: 30px;
-text-align: center;
-background: limegreen;
-color: white;
-font-size:1.5em;
-height:10%;
-border-top-style: solid;
-border-width: 0px;
-border-color: black;
-}
-
-h1.title {
-font-size:3em;
-text-align: center;
-margin-bottom: 0px;
-color: white;
-}
-
-h1.sub_title {
-font-size:1.5em;
-text-align: center;
-margin-top: 0px;
-color: white;
+-webkit-font-smoothing: antialiased;
 }
 
 a {
 text-decoration: none;
+color: white;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+.header {
+display: flex;
+justify-content: center; /* align horizontal */
+align-items: center; /* align vertical */
+height: 115px;
+top: 0;
+width: 100%;
+color: white;
+background-color: #696969;
+position: sticky;
+padding: 20px;
+
+}
+
+.ad_space {
+height: 100px;
+background-color: #808080;
+color: red;
+top: 115px;
+position: sticky;
+text-align: center;
+padding: 30px;
+overflow: block;
+}
+
+.content {
+display: inline-block;
+text-align: center;
+top: 215px;
+height: calc(100vh - 215px - 80px);
+font-size: 25px;
+padding-top: 10%;
+padding-left: 20%;
+padding-right: 20%;
+overflow: auto;
+width: 100%;
+background-color: #808080;
+color: white;
+}
+
+.footer {
+display: flex;
+justify-content: center; /* align horizontal */
+align-items: center; /* align vertical */
+height: 80px;
+width: 100%;
+background-color: #696969;
+position: fixed;
+bottom: 0;
+text-align: center;
+color: white;
+}
+
+h1 {
+font-family: 'Dosis', sans-serif;
+font-weight: 800 !important;
+}
+
+h2 {
+font-family: 'Dosis', sans-serif;
+font-weight: 400 !important;
 }
