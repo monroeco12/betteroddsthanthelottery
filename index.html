@@ -1,36 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <title>Lottery</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172820632-1"></script>
     <script>
-        document.getElementsByClassName('content')[0].onclick = function(){
-        location.href= '1.html'
-        }
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        
+        gtag('config', 'UA-172820632-1');
     </script>
+    
+    <link rel="stylesheet" href="styles.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <title>Lottery</title>
+    
 </head>
+
 <body>
+
+    <div class="content">
+        <h1 class="content">
+            Do you feel like the odds are in your favor? Click anywhere and find out just how wrong you are!
+        </h1>
+    </div>
+
+</body>
 
 <div class="header">
     <a href="https://www.betteroddsthanthelottery.com/">
-    <h1>BetterOddsThanTheLottery.com</h1>
+        <h1 class="title">BetterOddsThanTheLottery.com</h1>
     </a>
 </div>
 
-<div class="ad_space">
-</div>
+<div class="ad_space"></div>
 
-<div class="content">
-    <h1>Do you feel like the odds are in your favor? Click anywhere and find out!</h1>
-</div>
+<div class="link_overlay"></div>
 
 <div class="footer">
-     <a href="https://www.betteroddsthanthelottery.com/">
-    <h2>&#169; 2020 BetterOddsThanTheLottery.com</h2>
-     </a>
+    <h2 class="footer"><a href="https://www.betteroddsthanthelottery.com/">&#169; 2020 BetterOddsThanTheLottery.com</a></h2>
 </div>
 
-</body>
+<script>
+    document.querySelectorAll(".link_overlay")[0].onclick = function(){
+    location.href= '1.html'
+    }
+</script>
+<script>
+    document.querySelectorAll(".ad_space")[0].onclick = function(){
+    location.href= '1.html'
+    }
+</script>
+
 </html>
