@@ -1,78 +1,130 @@
-
 * {
-box-sizing: border-box;
-margin: 0;
--webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    margin:0;
+    color: #009933;
+}
+
+body, html {
+    position: absolute;
+    top: 80px;
+    padding-bottom: 100px;
+    overflow: auto;
+    background-color: white;
+}
+
+.link_overlay {
+    position: fixed;
+    width: 100%;
+    height: 75%;
+    top: 146px;
+    left: 0px;
 }
 
 a {
-text-decoration: none;
-color: white;
+    text-decoration: none;
 }
 
 a:visited {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .header {
-display: flex;
-justify-content: center; /* align horizontal */
-align-items: center; /* align vertical */
-height: 115px;
-top: 0;
-width: 100%;
-color: white;
-background-color: #696969;
-position: sticky;
-padding: 20px;
-
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    height: 80px;
+    width: 100vw;
+    background-color: white;
+    border-bottom: 1px solid gray;
 }
 
 .ad_space {
-height: 100px;
-background-color: #808080;
-color: red;
-top: 115px;
-position: sticky;
-text-align: center;
-padding: 30px;
-overflow: block;
+    position: fixed;
+    top: 80px;
+    height: 65px;
+    width: 100vw;
+    background-color: white;
 }
 
 .content {
-display: inline-block;
-text-align: center;
-top: 215px;
-height: calc(100vh - 215px - 80px);
-font-size: 25px;
-padding-top: 10%;
-padding-left: 20%;
-padding-right: 20%;
-overflow: auto;
-width: 100%;
-background-color: #808080;
-color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
 }
 
 .footer {
-display: flex;
-justify-content: center; /* align horizontal */
-align-items: center; /* align vertical */
-height: 80px;
-width: 100%;
-background-color: #696969;
-position: fixed;
-bottom: 0;
-text-align: center;
-color: white;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left:0;
+    bottom: 0;
+    height: 40px;
+    width: 100vw;
+    background-color: white;
+    border-top: 1px solid gray;
 }
 
-h1 {
-font-family: 'Dosis', sans-serif;
-font-weight: 800 !important;
+@media screen and (min-width: 601px) {
+h1.title {
+    margin: 0;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 800 !important;
+    font-size: 35px;
+    text-align: center;
+}
 }
 
-h2 {
-font-family: 'Dosis', sans-serif;
-font-weight: 400 !important;
+@media screen and (max-width: 600px) {
+h1.title {
+    margin: 0;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 800 !important;
+    font-size: 20px;
+    text-align: center;
+}
+}
+
+@media screen and (min-width: 601px) {
+h2.footer {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400 !important;
+    font-size: 15px;
+}
+}
+
+@media screen and (max-width: 600px) {
+h2.footer {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400 !important;
+    font-size: 10px;
+}
+}
+
+@media screen and (min-width: 601px) {
+h1.content {
+    padding-top: 5vw;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 800 !important;
+    font-size: 35px;
+    text-align: center;
+}
+}
+
+@media screen and (max-width: 600px) {
+h1.content {
+    padding-top: 10vw;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 800 !important;
+    font-size: 20px;
+    text-align: center;
+}
 }
