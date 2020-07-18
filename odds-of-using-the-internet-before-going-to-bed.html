@@ -26,18 +26,11 @@ permalink: /odds-of-using-the-internet-before-going-to-bed
 
     <title>Better odds than winning the lottery</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-    $(document).ready(function(){
-    var colors = ["#FF6F61", "#6B5B95", "#88B04B", "#F7CAC9", "#92A8D1", "#955251", "#B565A7", "#009B77", "#DD4124",
-    "#D65076", "#45B8AC", "#EFC050", "#5B5EA6", "#9B2335", "#DFCFBE", "#55B4B0", "#E15D44", "#7FCDCD", "#BC243C",
-    "#C3447A", "#98b4d4"];
-    var rand = Math.floor(Math.random()*colors.length);
-    $('#html, #body, #footer, #ad_space, #header').css("background-color", colors[rand]);
-    $('content, ad_space').css("color", colors[rand]);
-    });
-</script>
+
 </head>
 
+<script src="random_background.js"></script>
+    
 <body id="body" style="background-color: #0080ff;">
 
     <div class="content">
