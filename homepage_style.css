@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    color: white;
+
+}
+
+body {
+    position: absolute;
+    top: 150px;
+    padding-bottom: 100px;
+    overflow: auto;
+}
+
+html {
+    position:fixed;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+    background-color: #5d4257;
+    background-image: linear-gradient(315deg, #5d4257 0%, #a5c7b7 74%);
+}
+
+.link_overlay {
+    position: fixed;
+    width: 100%;
+    height: 75%;
+    top: 146px;
+    left: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+.header {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    height: 80px;
+    width: 100vw;
+    border-bottom: 1px solid white;
+}
+
+.ad_space {
+    position: fixed;
+    top: 80px;
+    height: 65px;
+    width: 100vw;
+}
+
+.content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.footer {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left:0;
+    bottom: 0;
+    height: 40px;
+    width: 100vw;
+    border-top: 1px solid white;
+}
+
+@media screen and (min-width: 601px) {
+h1.title {
+    margin: 0;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 800 !important;
+    font-size: 35px;
+    text-align: center;
+}
+}
+
+@media screen and (max-width: 600px) {
+h1.title {
+    margin: 0;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 800 !important;
+    font-size: 20px;
+    text-align: center;
+}
+}
+
+@media screen and (min-width: 601px) {
+h2.footer {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400 !important;
+    font-size: 15px;
+}
+}
+
+@media screen and (max-width: 600px) {
+h2.footer {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400 !important;
+    font-size: 10px;
+}
+}
+
+@media screen and (min-width: 601px) {
+h1.content {
+    padding-top: 5vw;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 800 !important;
+    font-size: 35px;
+    text-align: center;
+}
+}
+
+@media screen and (max-width: 600px) {
+h1.content {
+    padding-top: 10vw;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 800 !important;
+    font-size: 20px;
+    text-align: center;
+}
+}
