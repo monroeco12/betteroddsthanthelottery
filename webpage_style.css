@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Faster+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monofett&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    padding-bottom: 5px;
+}
+
+span {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color:black;
+}
+
+html {
+    background-color: #ffdb99;
+}
+
+@media screen and (max-width: 400px) {
+.background {
+    position: fixed;
+    background-image: url('wallpaper.png');
+    background-size: contain;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .1;
+    z-index: -1;
+}
+
+.sidebar {
+    white-space: nowrap;
+    position: fixed;
+    height: 100%;
+    width: 15px;
+    top: 0px;
+    left: 15px;
+    background-color: #ffc966;
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: .65rem;
+    color: white;
+    writing-mode: tb-rl;
+    transform: rotate(-180deg);
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+div.title {
+    position: fixed;
+    top: 10px;
+    left: 55px;
+    width: 250px;
+    font-family: 'Monofett';
+    font-size: 15px;
+}
+
+.adsense {
+    position: fixed;
+    top: 90px;
+    left: 55px;
+    right: 25px;
+    height: 50px;
+}
+
+body {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    position: absolute;
+    top: 135px;
+    left: 55px;
+    right: 25px;
+    height: calc(100% - 250px);
+    overflow: auto;
+}
+
+.footer {
+    position: fixed;
+    bottom: 10px;
+    left: 55px;
+    right: 25px;
+    height: 55px;
+    background-image: url('barcode.png');
+    background-repeat: repeat-x;
+    background-size: contain;
+}
+
+.message {
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: .75rem;
+}
+
+p.odds {
+    font-size: 75px;
+    text-align: center;
+
+}
+
+p.chance {
+    text-align: center;
+    padding-bottom: 20px;
+
+}
+
+.begin {
+    text-align: center;
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 1rem;
+    margin-top: 10%;
+    width: 100%;
+
+}
+}
+
+@media screen and (min-width: 401px) and (max-width: 700px) {
+.background {
+    position: fixed;
+    background-image: url('wallpaper.png');
+    background-size: contain;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .1;
+    z-index: -1;
+}
+
+.sidebar {
+    white-space: nowrap;
+    position: fixed;
+    height: 100%;
+    width: 25px;
+    top: 0px;
+    left: 15px;
+    background-color: #ffc966;
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: .85rem;
+    color: white;
+    writing-mode: tb-rl;
+    transform: rotate(-180deg);
+    text-align: center;
+    padding-left: 3px;
+    padding-right: 10px;
+}
+
+div.title {
+    position: fixed;
+    top: 10px;
+    left: 75px;
+    width: 300px;
+    font-family: 'Monofett';
+    font-size: 18px;
+}
+
+.adsense {
+    position: fixed;
+    top: 100px;
+    left: 75px;
+    right: 25px;
+    height: 65px;
+}
+
+body {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    position: absolute;
+    top: 165px;
+    left: 75px;
+    right: 25px;
+    height: calc(100% - 300px);
+    overflow: auto;
+}
+
+.footer {
+    position: fixed;
+    bottom: 10px;
+    left: 75px;
+    right: 25px;
+    height: 65px;
+    background-image: url('barcode.png');
+    background-repeat: repeat-x;
+    background-size: contain;
+}
+
+.message {
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 1rem;
+}
+
+p.odds {
+    font-size: 95px;
+    text-align: center;
+}
+
+p.chance {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.begin {
+    text-align: center;
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 1rem;
+    margin-top: 10%;
+    width: 100%;
+}
+}
+
+@media screen and (min-width: 701px) {
+.background {
+position: fixed;
+    background-image: url('wallpaper.png');
+    background-size: contain;
+    background-repeat: repeat;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .1;
+    z-index: -1;
+}
+
+.sidebar {
+    white-space: nowrap;
+    position: fixed;
+    height: 100%;
+    width: 25px;
+    top: 0px;
+    left: 15%;
+    background-color: #ffc966;
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: .85rem;
+    color: white;
+    writing-mode: tb-rl;
+    transform: rotate(-180deg);
+    text-align: center;
+    padding-left: 3px;
+    padding-right: 10px;
+}
+
+div.title {
+    position: fixed;
+    top: 25px;
+    left: 25%;
+    width: 65%;
+    font-family: 'Monofett';
+    font-size: 28px;
+}
+
+.adsense {
+    position: fixed;
+    top: 150px;
+    left: 25%;
+    right: 10%;
+    height: 85px;
+}
+
+body {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    position: absolute;
+    top: 237px;
+    left: 25%;
+    right: 10%;
+    height: calc(100% - 350px);
+    overflow: auto;
+}
+
+.footer {
+    position: fixed;
+    bottom: 10px;
+    left: 25%;
+    right: 10%;
+    height: 65px;
+    background-image: url('barcode.png');
+    background-repeat: repeat-x;
+    background-size: contain;
+}
+
+.message {
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 1.25rem;
+}
+
+p.odds {
+    font-size: 105px;
+    text-align: center;
+}
+
+p.chance {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.begin {
+    text-align: center;
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 2rem;
+    margin-top: 10%;
+    width: 100%;
+}
+}
