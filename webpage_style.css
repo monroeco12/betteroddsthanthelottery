@@ -15,6 +15,11 @@ span {
     display: inline-block;
 }
 
+img {
+    max-width:75%;
+    height:auto;
+}
+
 a {
     text-decoration: none;
 }
@@ -64,8 +69,12 @@ div.title {
     top: 10px;
     left: 55px;
     width: 250px;
+    height: 100px;
     font-family: 'Monofett';
     font-size: 15px;
+    background-size: contain;
+    background-image: url('logo.png');
+    background-repeat: no-repeat;
 }
 
 .adsense {
@@ -107,23 +116,20 @@ body {
 
 p.odds {
     font-size: 75px;
-    text-align: center;
-
+    text-align: left;
 }
 
 p.chance {
-    text-align: center;
+    text-align: left;
     padding-bottom: 20px;
-
 }
 
 .begin {
-    text-align: center;
+    text-align: left;
     font-family: 'Allerta Stencil', sans-serif;
     font-size: 1rem;
     margin-top: 10%;
     width: 100%;
-
 }
 }
 
@@ -162,16 +168,20 @@ div.title {
     position: fixed;
     top: 10px;
     left: 75px;
-    width: 300px;
+    width: 75%;
+    height: 100px;
     font-family: 'Monofett';
     font-size: 18px;
+    background-size: contain;
+    background-image: url('logo.png');
+    background-repeat: no-repeat;
 }
 
 .adsense {
     position: fixed;
     top: 100px;
     left: 75px;
-    right: 25px;
+    right: 10%;
     height: 65px;
 }
 
@@ -183,7 +193,7 @@ body {
     position: absolute;
     top: 165px;
     left: 75px;
-    right: 25px;
+    right: 10%;
     height: calc(100% - 300px);
     overflow: auto;
 }
@@ -192,7 +202,7 @@ body {
     position: fixed;
     bottom: 10px;
     left: 75px;
-    right: 25px;
+    right: 10%;
     height: 65px;
     background-image: url('barcode.png');
     background-repeat: repeat-x;
@@ -206,16 +216,16 @@ body {
 
 p.odds {
     font-size: 95px;
-    text-align: center;
+    text-align: left;
 }
 
 p.chance {
-    text-align: center;
+    text-align: left;
     padding-bottom: 20px;
 }
 
 .begin {
-    text-align: center;
+    text-align: left;
     font-family: 'Allerta Stencil', sans-serif;
     font-size: 1rem;
     margin-top: 10%;
@@ -225,7 +235,7 @@ p.chance {
 
 @media screen and (min-width: 701px) {
 .background {
-position: fixed;
+    position: fixed;
     background-image: url('wallpaper.png');
     background-size: contain;
     background-repeat: repeat;
@@ -243,7 +253,7 @@ position: fixed;
     height: 100%;
     width: 25px;
     top: 0px;
-    left: 15%;
+    left: 17%;
     background-color: #ffc966;
     font-family: 'Allerta Stencil', sans-serif;
     font-size: .85rem;
@@ -259,16 +269,21 @@ div.title {
     position: fixed;
     top: 25px;
     left: 25%;
-    width: 65%;
+    width: 50%;
+    height: 100px;
     font-family: 'Monofett';
     font-size: 28px;
+    background-size: contain;
+    background-image: url('logo.png');
+    background-repeat: no-repeat;
+
 }
 
 .adsense {
     position: fixed;
     top: 150px;
     left: 25%;
-    right: 10%;
+    right: 25%;
     height: 85px;
 }
 
@@ -278,9 +293,10 @@ body {
     flex-wrap: wrap;
     align-content: flex-start;
     position: absolute;
+    justify-content: left;
     top: 237px;
     left: 25%;
-    right: 10%;
+    right: 25%;
     height: calc(100% - 350px);
     overflow: auto;
 }
@@ -289,7 +305,7 @@ body {
     position: fixed;
     bottom: 10px;
     left: 25%;
-    right: 10%;
+    right: 25%;
     height: 65px;
     background-image: url('barcode.png');
     background-repeat: repeat-x;
@@ -303,16 +319,16 @@ body {
 
 p.odds {
     font-size: 105px;
-    text-align: center;
+    text-align: left;
 }
 
 p.chance {
-    text-align: center;
+    text-align: left;
     padding-bottom: 20px;
 }
 
 .begin {
-    text-align: center;
+    text-align: left;
     font-family: 'Allerta Stencil', sans-serif;
     font-size: 2rem;
     margin-top: 10%;
